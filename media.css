@@ -1,0 +1,44 @@
+.grid-main{
+    display:grid;
+    grid-template-columns: repeat(3,1fr); /*to show the contents in division*/
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.grid-item{
+    background-color:red;
+    padding: 10px;
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    border: 10px solid black;
+}
+/*@media(max-width : 475px) { works from 0 to 474
+    .grid-main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media(min-width : 800px) { works from 475 to 800
+    .grid-main{
+        grid-template-columns: repeat(2,1fr);
+        background-color: wheat;
+    }
+    
+}*/
+
+@media (max-width:300px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+        background-color: rgb(10,10,10);
+    }
+    .grid-item{
+        background-color: green;
+        border: 1px solid blueviolet;
+        padding: 10px;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+    }
+}
